@@ -1,0 +1,29 @@
+Class Worker (Abstract)
+- IDKaryawan
+- Nama
+- Tunjangan Pulsa
+- Gaji Pokok
+- Absensi Hari;
++ Absensi()
+
+Class Staff extends Worker
+	- Tunjangan Makan
+	- ArrayList Email
+	+ HitungTunjanganMakan 
+	
+Class Manager extends Worker
+	- Tunjangan Transport
+	- Tunjangan Entertaint
+	- ArrayList Telepon
+	+ HitungTunjanganTransport 
+	+ HitungTunjanganEntertaint 
+	
+1. Buat Worker -> 2 ArrayList (Staff dan Manager)
+	- Input semua atrribut minimal 2 masing2 staff dan manager
+2. Create JSON Format and Write to File (Staff.txt & Manager.txt)
+	- Staff
+	- Manager
+3. Read JSON Format from a File, input Filename (Show on Screen)
+	- Staff.txt
+	- Manager.txt
+4. Exit

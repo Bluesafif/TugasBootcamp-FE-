@@ -1,0 +1,22 @@
+Tugas
+
+Abstract Class Worker
+- IDKaryawan
+- Nama
++ Absensi()
+
+
+Class Staff extends Worker
+- Jabatan
+	
+	
+MENU
+1. Buat Staff (Minimal 3) 
+2. Absensi
+	-> pilih id karyawan yang absensi
+3. Tampilkan laporan Staff (dengan format berikut menggunakan perulangan dan sorting by ID)
+
+	ID		Nama		Jabatan			Absensi/hari
+	11		Staff 1		Staff Junior	2
+	21		Staff 2		Staff Senior	3
+	

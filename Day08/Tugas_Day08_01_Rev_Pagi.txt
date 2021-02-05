@@ -1,0 +1,28 @@
+Tugas
+
+Predefine
+Buat file password.txt
+Buat file username.txt
+
+Login
+Username : ? -> Scanner (Email kalo sesuai dengan karakteristik email/No Telp)
+Password : ? -> Scanner (Password dengan karakteristik lebih dari 8 character, ada huruf besar dan kecil, memiliki special character)
+
+-> Cek Regex Username -> Cek Regex Password -> bandingkan dengan username dan password pada file 
+
+Class Mahasiswa
+- ID
+- Nama
+- Nilai - ArrayList <Double>
+	Bahasa Inggris
+	Fisika
+	Algoritma
+
+MENU
+1. Create & Input Data Mahasiswa -> ArrayList
+2. Edit or Delete Data Mahasiswa
+	-> Input ID -> Binary Search
+3. Tampilkan laporan Nilai Data Mahasiswa -> Sorting
+	ID		NAMA	Bhs Inggris 		Fisika 		Algoritma
+	1		John	8			7		9
+	2		Peter	6			9		8

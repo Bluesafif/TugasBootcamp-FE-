@@ -1,0 +1,16 @@
+Class Mahasiswa
+- ID
+- Nama
+- Nilai - ArrayList <Double>
+	Bahasa Inggris
+	Fisika
+	Algoritma
+
+MENU
+1. Create & Input Data Mahasiswa -> ArrayList
+2. Tampilkan laporan Nilai Data Mahasiswa -> Sorting -> INPUT ID
+	ID		NAMA	Bhs Inggris Fisika 	Algoritma
+	1		John	8			7		9
+	2		Peter	6			9		8
+3. Tampilkan di Layar & Tulis ke File (Multithreading)
+4. EXIT
