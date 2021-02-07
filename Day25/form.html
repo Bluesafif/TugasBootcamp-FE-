@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+	<script type="text/javascript" src="form.js" defer></script>
+</head>
+	<body>
+		<div class="container">
+            <div class="header">
+                <p> TUGAS DAY 25 </p>
+            </div>
+			<div class="row">
+				<div class="col">
+					<div class="col1">
+						<table class="table1" border="1" cellpadding="2" cellspacing="2" height="256" color="grey">
+							<thead>
+								<tr>          
+									<th height="30" colspan="2" bgcolor="black">
+										<font color="white" size="5">FORM LATIHAN!</font>
+									</th>
+								</tr>
+                            </thead>
+                                <tr>
+                                    <td>Nama</td>
+                                    <td>
+                                        <input type="text" name="nama" placeholder="Masukkan Nama Lengkap">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Tempat/Tanggal Lahir</td>
+                                    <td>
+                                        <input type="text" name="tempat" placeholder="Masukkan Tempat Lahir"></input><br>
+                                        <input type="date" name="tanggal" placeholder="Masukkan Tanggal Lahir"></input>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Jenis Kelamin</td>
+                                    <td>
+                                        <input type="radio" name="jenkel" value="Laki-Laki">Laki-Laki</input>
+                                        <input type="radio" name="jenkel" value="Perempuan">Perempuan</input>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Hobby</td>
+                                    <td>
+                                        <input type="checkbox" name="hobby" id="berenang" value="Berenang">Berenang</input>
+                                        <input type="checkbox" name="hobby" id="jogging" value="Jogging">Jogging</input><br>
+                                        <input type="checkbox" name="hobby" id="bersepeda" value="Bersepeda">Bersepeda</input>
+                                        <input type="checkbox" name="hobby" id="futsal" value="Futsal">Futsal</input>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Agama</td>
+                                    <td>
+                                        <select name="Agama" id="agama">
+                                            <option value="">Pilih</option>
+                                            <option value="Islam">Islam</option>
+                                            <option value="Protestan">Protestan</option>
+                                            <option value="Katholik">Katholik</option>
+                                            <option value="Hindu">Hindu</option>
+                                            <option value="Budha">Budha</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Alamat</td>
+                                    <td><textarea class="alamat" type="text" name="alamat" placeholder="Masukkan Alamat"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="button" id="submit" value="Submit"></input>
+                                        <input type="button" id="reset" value="Reset"></input>
+                                    </td>         
+                                </tr>
+						</table>
+					</div>
+
+					<div class="col2">
+						<table cellspacing="0" cellpadding="5" border="3" align="center">
+							<thead>
+								<tr>
+									<th class="tNomor">No</th>
+									<th>Nama</th>
+                                    <th class="tUmur">Umur</th>
+                                    <th>Jenis Kelamin</th>
+                                    <th>Hobby</th>
+                                    <th>Agama</th>
+                                    <th class="tAlamat">Alamat</th>
+                                    <th>Action</th>
+								</tr>
+							</thead>
+							<tbody class="table2" id="bodyTable"></tbody>
+						</table>
+					</div>
+				</div>
+                <div class="paging" id="paging">
+
+                </div>
+			</div>
+            <select name="cari" id="cari">
+                <option value="">---Cari Berdasarkan---</option>
+                <option value="Nama">Nama</option>
+                <option value="Agama">Agama</option>
+            </select>
+            <input class="cari" name="inputCari" id="inputCari"></input>
+		</div>
+	</body>
+</html>
