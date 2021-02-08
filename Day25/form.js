@@ -5,11 +5,11 @@ const inputJenkel       = document.querySelectorAll('input[name="jenkel"]')
 const inputHobby        = document.querySelectorAll('input[name="hobby"]')
 const inputAgama        = document.querySelector('select[name="Agama"]')
 const inputAlamat 		= document.querySelector('textarea[name="alamat"]')
+
 const hobby1            = document.getElementById('berenang')
 const hobby2            = document.getElementById('jogging')
 const hobby3            = document.getElementById('bersepeda')
 const hobby4            = document.getElementById('futsal')
-
 const submit 			= document.getElementById('submit')
 const reset 			= document.getElementById('reset')
 const ubah              = document.getElementById('update')
@@ -133,6 +133,26 @@ function valid(){
     if (inputTanggal.value === "") {
         valid = true
     }
+    for (var i of inputJenkel) {
+        if (i.checked === true) {
+            var cek1 = true
+            break
+        }
+    }
+    if (cek1 === false) {
+        valid = true
+        return valid
+    }
+    for (var j of inputHobby) {
+        if (j.checked === true) {
+            var cek2 = true
+            break
+        }
+    }
+    if (cek2 === false) {
+        valid = true
+        return valid
+    }
     if (inputAgama.value === "") {
         valid = true
     }
@@ -197,15 +217,15 @@ function inputData () {
 		dataAlamat  : inputAlamat.value
 	};
     hasilInput.push(hasil);
-    console.log(hasilInput);
 	personId++;
+    alert("Data Berhasil Di Tambahkan!")
 
 	showData();
     handleReset();
 }
 
 function dummyData() {
-    for (var i = 0; i < 10; i++) {
+    for (var i = 0; i < 8; i++) {
         let hasil = {
             id 			: personId,
             dataNama 	: "Ali",
@@ -351,6 +371,7 @@ function edit(id) {
 
     showData();
     handleReset();
+    selectedId = 0;
     submit.value = "Submit";
 }
 
