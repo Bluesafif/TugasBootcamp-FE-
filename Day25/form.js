@@ -81,9 +81,11 @@ inputCari.addEventListener("keyup", (cari) => {
 })
 
 let search = (cari) => {
-    bodyTable.innerHTML = "";
+    var lastPage = firstPage * lim;
+    var offset   = lastPage - lim;
     if (cari.length > 0) {
-        for (var i = 0; i < cari.length; i++) {
+        bodyTable.innerHTML = "";
+        for (var i = offset; i < lastPage; i++) {
             bodyTable.innerHTML +=`
             <tr>
                 <td class="tNumber"><b>${cari[i].id}</b></td>
@@ -99,6 +101,7 @@ let search = (cari) => {
                 </td>
             </tr>`;
         }
+        pagin()
     }else{
         bodyTable.innerHTML = `
             <tr>
@@ -224,7 +227,7 @@ function showData() {
     var lastPage = firstPage * lim;
     var offset   = lastPage - lim;
     if (hasilInput.length > 0) {
-        bodyTable.innerHTML = ''
+        bodyTable.innerHTML = ""
         // hasilInput.forEach(hasil =>{
         for (var i = offset; i < lastPage; i++) {
             bodyTable.innerHTML += `
