@@ -1,0 +1,46 @@
+.content{
+	margin-left: 15px;
+}
+
+.col2{
+	display: flex;
+	margin-bottom: 15px;
+	font-size: larger;
+	height: 46vh;
+}
+
+.tNomor{
+	width: 25px;
+}
+
+.tNama{
+	width: 150px;
+}
+
+.tUmur{
+    text-align: center;
+}
+
+.tAlamat{
+	width: 275px;
+}
+
+.paging{
+	display: flex;
+    justify-content: space-evenly;
+	margin: 10px;
+}
+
+.table1{
+    background-color: lightskyblue;
+}
+
+.search{
+    text-align: left;
+    margin-top: 10px;
+    display: flow-root;
+}
+
+.cari{
+    margin-left: 10px;
+}
